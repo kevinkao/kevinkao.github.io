@@ -3,6 +3,13 @@
     overflow: hidden;
 }
 
+#intro h1 {
+    font-size: 64px;
+    font-weight: 800;
+    margin: 5px 0 15px;
+    font-family: 'Montserrat';
+}
+
 .navbar-custom {
     background: none;
     color: #fff;
@@ -12,8 +19,24 @@
     color: #fff;
 }
 
+.navbar-custom .nav li a:hover, 
+.navbar-custom .nav li a:focus, 
+.navbar-custom .nav li.active {
+    background: none;
+    outline: 0;
+    color: #EF4836;
+}
+
+.navbar-header .navbar-brand {
+    color: #fff;
+}
+
 .navbar-custom .navbar-nav > li.active {
     border-bottom: 3px solid #fff;
+}
+
+.section {
+    margin-bottom: 45px;
 }
 
 #intro {
