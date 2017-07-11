@@ -1,0 +1,23 @@
+
+.wrapper {
+    overflow: hidden;
+}
+
+.navbar-custom {
+    background: none;
+    color: #fff;
+}
+
+.navbar-custom a {
+    color: #fff;
+}
+
+.navbar-custom .navbar-nav > li.active {
+    border-bottom: 3px solid #fff;
+}
+
+#intro {
+    padding: 260px 0 160px 0;
+    color: #fff;
+    text-align: center;
+}
