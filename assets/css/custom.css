@@ -1,16 +1,67 @@
 
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);
+
+body {
+    font: 300 15px/1.6 'Raleway', serif, sans-serif;
+    color: #545454;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: 400 46px/1.2 'Montserrat', serif, sans-serif;
+    margin: 5px 0 5px;
+    color: #222;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin: 5px 0 15px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 5px 0 15px;
+}
+
+h4 {
+    font-size: 16px;
+    margin: 5px 0 10px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 13px;
+}
+
+a,
+.btn,
+.navbar,
+.form-control,
+.portfolio-item-description {
+    -webkit-transition: all 0.125s ease-in-out 0s;
+       -moz-transition: all 0.125s ease-in-out 0s;
+        -ms-transition: all 0.125s ease-in-out 0s;
+         -o-transition: all 0.125s ease-in-out 0s;
+            transition: all 0.125s ease-in-out 0s;
+}
+
 .wrapper {
     overflow: hidden;
 }
 
-#intro h1 {
-    font-size: 64px;
-    font-weight: 800;
-    margin: 5px 0 15px;
-    font-family: 'Montserrat';
-}
-
 .navbar-custom {
+    padding: 25px 15px;
     background: none;
     color: #fff;
 }
@@ -28,11 +79,28 @@
 }
 
 .navbar-header .navbar-brand {
+    font: 700 18px/1.2 'Montserrat', serif, sans-serif;
     color: #fff;
+    padding-top: 15px;
 }
 
 .navbar-custom .navbar-nav > li.active {
     border-bottom: 3px solid #fff;
+}
+
+.navbar-color {
+    box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+    background: #fff;
+    padding: 0;
+}
+
+.navbar-color li a,
+.navbar-color .navbar-brand {
+    color: #222;
+}
+
+.navbar-color .navbar-nav > li.active {
+    border-bottom: 3px solid #222;
 }
 
 .section {
@@ -43,4 +111,16 @@
     padding: 260px 0 160px 0;
     color: #fff;
     text-align: center;
+}
+
+#intro h1,
+#intro h3 {
+    color: #fff;
+}
+
+#intro h1 {
+    font-size: 64px;
+    font-weight: 800;
+    font-family: 'Montserrat';
+    margin: 5px 0 15px;
 }
