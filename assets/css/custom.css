@@ -103,8 +103,15 @@ a,
     border-bottom: 3px solid #222;
 }
 
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
 .section {
-    margin-bottom: 45px;
+    padding: 120px 0;
 }
 
 #intro {
@@ -123,4 +130,106 @@ a,
     font-weight: 800;
     font-family: 'Montserrat';
     margin: 5px 0 15px;
+}
+
+#profile {
+    margin-top: 90px;
+}
+
+#profile-contact {
+    box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+    padding: 20px 0;
+    margin-bottom: 45px;
+}
+
+.profile-item i {
+    line-height: 42px;
+    font-size: 32px;
+    color: #222;
+}
+
+.timeline {
+    border-left: 3px solid #00BCD4;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    position: relative;
+    padding: 0 30px;
+    margin-left: 280px;
+}
+
+.timeline .item:before {
+    content: "";
+    position: absolute;
+    left: -43px;
+    top: 0;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: #fff;
+    border: 3px solid #00BCD4;
+}
+
+.timeline .item:after {
+    content: "";
+    position: absolute;
+    left: -37px;
+    top: 6px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: #00BCD4;
+    z-index: 10;
+}
+
+.timeline .item {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.timeline .work-place {
+    position: relative;
+}
+
+.timeline .work-place h3 {
+    text-transform: none;
+}
+
+.timeline .location {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    color: #8a8a8a;
+}
+
+.timeline .place {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.timeline .job-meta {
+    position: absolute;
+    left: -280px;
+    top: 0;
+}
+
+.timeline .title {
+    font-size: 18px
 }
